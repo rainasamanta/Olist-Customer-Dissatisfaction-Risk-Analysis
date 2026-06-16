@@ -7,8 +7,8 @@ SELECT
 p.product_id,
 t.product_category_name_english AS product_category,
 p.product_weight_g
-FROM products p
-LEFT JOIN product_category_name_translation t
+FROM products AS p
+LEFT JOIN product_category_name_translation AS t
 ON p.product_category_name = t.product_category_name;
 
 -- 1. NULL delivery dates
@@ -24,8 +24,8 @@ HAVING count > 1;
 
 -- 3. Untranslated categories
 SELECT COUNT(*) AS untranslated_products
-FROM products p
-LEFT JOIN product_category_name_translation t
+FROM products AS p
+LEFT JOIN product_category_name_translation AS t
 ON p.product_category_name = t.product_category_name
 WHERE t.product_category_name_english IS NULL;
 
