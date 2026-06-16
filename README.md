@@ -1,5 +1,5 @@
 # E-Commerce Customer Dissatisfaction & Return Risk Analysis (SQL)
-###This project analyzes the Olist Brazilian E-Commerce dataset using MySQL and answers key questions related to sales performance, customer experience, logistics efficiency, and dissatisfaction risk.
+### This project analyzes the Olist Brazilian E-Commerce dataset using MySQL and answers key questions related to sales performance, customer experience, logistics efficiency, and dissatisfaction risk.
 
 ## Business Objective
 An e-commerce company wants to improve customer satisfaction and reduce losses associated with poor customer experiences and potential product returns. 
