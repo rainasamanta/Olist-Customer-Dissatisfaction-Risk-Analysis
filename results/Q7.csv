@@ -1,0 +1,6 @@
+price_bucket,avg_rating,total_orders
+"Under RS 50",4.03,32648
+"RS 50 - RS 150",4.03,45409
+"Above RS 500",4.00,3105
+"RS 151 - RS 300",4.05,14253
+"RS 301 - RS 500",4.04,3529
