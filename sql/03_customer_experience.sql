@@ -30,11 +30,11 @@ LIMIT 10;
 -- Q7: Does product price affect review score?
 SELECT 
 CASE 
-WHEN oi.price < 50 THEN 'Under RS 50'
-WHEN oi.price BETWEEN 50 AND 150 THEN 'RS 50 - RS 150'
-WHEN oi.price BETWEEN 151 AND 300 THEN 'RS 151 - RS 300'
-WHEN oi.price BETWEEN 301 AND 500 THEN 'RS 301 - RS 500'
-ELSE 'Above RS 500'
+WHEN oi.price < 50 THEN 'Under R$50'
+WHEN oi.price BETWEEN 50 AND 150 THEN 'R$50 - R$150'
+WHEN oi.price BETWEEN 151 AND 300 THEN 'R$151 - R$300'
+WHEN oi.price BETWEEN 301 AND 500 THEN 'R$301 - R$500'
+ELSE 'Above R$500'
 END AS price_bucket,
 ROUND(AVG(r.review_score), 2) AS avg_rating,
 COUNT(DISTINCT oi.order_id) AS total_orders
