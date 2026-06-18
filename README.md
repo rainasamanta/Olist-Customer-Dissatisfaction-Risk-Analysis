@@ -23,33 +23,53 @@ The following preprocessing steps were performed before analysis:
 
 ## Key Business Questions
 
-### Business Overview
+**Business Overview**
 * How has order volume changed over time?
 * What is the order cancellation rate?
 * Which product categories generate the highest revenue?
 * Which sellers generate the highest sales volume and revenue?
 
-### Customer Experience
+**Customer Experience**
 * Which product categories receive the lowest ratings?
 * Which sellers receive the lowest ratings?
 * Does product price influence customer ratings?
 
-### Delivery Performance
+**Delivery Performance**
 * Which product categories experience the longest delivery times?
 * How do delayed deliveries affect customer ratings?
 * Which sellers have the highest delivery delay rates?
 
-### Return Risk Analysis
+**Return Risk Analysis**
 * What proportion of orders fall into Low, Medium, and High Risk categories?
 * Which product categories have the highest concentration of High Risk orders?
 * Which sellers have the highest concentration of High Risk orders?
 
 ## Key Findings
-* Order volume increased significantly throughout the observed period, indicating strong business growth.
-* Health & Beauty, Watches & Gifts, and Bed Bath Table were among the highest revenue-generating categories.
-* Office Furniture showed the lowest average customer ratings among major categories.
-* Delayed deliveries received substantially lower ratings compared to on-time deliveries.
-* Several product categories and sellers exhibited disproportionately high dissatisfaction rates, making them candidates for operational and quality review.
+
+**Business Overview**
+- Order volume grew from 2 orders (Sept 2016) to 7,000+ monthly by early 2018
+- Cancellation rate is 0.63% (625 out of 99,441 orders)
+- Health & Beauty leads revenue at R$1.44M; Bed Bath Table leads order volume at 9,417 orders
+- Seller `6560211a` handled 1847 orders generating R$122K in revenue, while seller `4869f7a` generated R$229k in revenue with total 1131 orders
+
+**Customer Experience**
+- Office Furniture is the lowest rated category at 3.49 avg across 1,263 orders
+- Seller `1ca7077d` is the worst rated at 2.20 avg across 114 orders with only R$13K revenue
+- Price has no effect on satisfaction; All price buckets score between 4.00 and 4.05
+
+**Delivery Performance**
+- Office Furniture has the longest avg delivery time at 20.8 days
+- Delayed orders score 2.57 vs 4.29 for on-time orders, showcasing a 1.72 point drop
+- Seller `06a2c3af` has the highest delay rate at 24.42% (95 out of 389 orders)
+
+**Return Risk**
+- 78.47% Low Risk, 12.76% High Risk, 8.23% Medium Risk; 1 in 5 orders carries dissatisfaction risk
+- Office Furniture has the highest High Risk rate at 34% (423 out of 1,244 orders)
+- Seller `1ca7077d` has the highest High Risk rate at 74.77% (80 out of 107 orders)
 
 ## Conclusion
-The results highlight the importance of delivery performance, seller quality, and category-level monitoring in improving customer satisfaction and reducing dissatisfaction risk.
+
+- Delivery performance is the single most actionable lever for improving satisfaction. Delayed orders score 1.72 points lower regardless of category or price, making logistics optimization a platform-wide priority.
+- Office Furniture presents compounded risk across every phase: lowest rating (3.49), longest delivery (20.8 days), and highest High Risk rate (34%), signaling systemic issues beyond pricing alone.
+- Price has no effect on customer expectations. Satisfaction scores are flat across all price tiers (4.00–4.05), meaning seller quality standards must be enforced uniformly regardless of what the product costs.
+- Several sellers flagged across multiple phases simultaneously represent concentrated reputational and financial risk and warrant priority review independent of their revenue contribution.
